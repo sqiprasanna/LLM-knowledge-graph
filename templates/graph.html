@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualization</title>
+</head>
+<body>
+    <h1>Graph Visualization</h1>
+    <table border="1">
+        <tr>
+            <th>Entity 1</th>
+            <th>Relation</th>
+            <th>Entity 2</th>
+        </tr>
+        {% for row in graph_data %}
+        <tr>
+            <td>{{ row.Entity1 }}</td>
+            <td>{{ row.Relation }}</td>
+            <td>{{ row.Entity2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

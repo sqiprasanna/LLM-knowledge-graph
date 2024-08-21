@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Processor</title>
+</head>
+<body>
+    <h1>Submit a Review</h1>
+    <form action="/" method="POST">
+        <label for="review_text">Review Text:</label><br>
+        <textarea id="review_text" name="review_text" rows="4" cols="50"></textarea><br><br>
+        <label for="user_id">User ID:</label><br>
+        <input type="text" id="user_id" name="user_id"><br><br>
+        <label for="review_rating">Review Rating (1-5):</label><br>
+        <input type="number" id="review_rating" name="review_rating" min="1" max="5"><br><br>
+        <label for="brand">Brand:</label><br>
+        <input type="text" id="brand" name="brand"><br><br>
+        <label for="category">Category:</label><br>
+        <input type="text" id="category" name="category"><br><br>
+        <label for="sub_category">Sub-Category:</label><br>
+        <input type="text" id="sub_category" name="sub_category"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <a href="/graph">View Graph</a>
+</body>
+</html>

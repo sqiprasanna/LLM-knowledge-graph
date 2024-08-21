@@ -1,0 +1,7 @@
+Flask
+nltk
+neo4j
+pandas
+openai
+networkx
+matplotlib
